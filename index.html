@@ -2,11 +2,100 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Гостиницы Седоны</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="page-light-theme">
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <div class="logo-container">
+              <img class="logo-header" src="img/logo.png" alt="Логотип" width="138" height="64">
+            </div>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="catalogue.html">Гостиницы</a>
+          </li>
+        </ul>
+        <li class="navigation-user-list">
+          <li class="navigation-user-list-item search">
+            <button class="search-button" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li class="navigation-user-list-item favorites">
+            <button class="favourites-button" type="button">
+              <span class="visually-hidden">Избранное</span>
+            </button>
+          </li>
+          <li class="navigation-user-list-item order">
+            <button class="order-button" type="button">Хочу сюда</button>
+          </li>
+        </li>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Гостиницы Седоны</h1>
+      <div class="main-logo-container">
+        <img class="main-logo" src="img/sedona-main-logo.png" alt="Главная" width="458" height="352">
+      </div>
+      <div class="description-container">
+        <h2 class="description-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="description-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <div class="advantages-list-item image-container">
+              <img class="advantages-image real-town" src="img/town.jpg" alt="Настоящий городок" width="800" height="384">
+            </div>
+            <h3 class="advantages-title real-town">Настоящий городок</h3>
+            <svg width="60" height="2">
+              <line x="85" y="86" stroke="white" stroke-width="30"></line>
+            </svg>
+            <p class="advantages-description real-town">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li class="advantages-item small-area">
+            <h4 class="advantages-title small-area">Небольшая площадь</h4>
+            <svg width="60" height="2">
+              <line x="85" y="86" stroke="black" stroke-width="30"></line>
+            </svg>
+            <p class="advantages-description small-area">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item beautiful-road">
+            <h4 class="advantages-title beautiful-road">Красивая дорога</h4>
+            <svg width="60" height="2">
+              <line x="85" y="86" stroke="black" stroke-width="30"></line>
+            </svg>
+            <p class="advantages-description beautiful-road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item few-tourists">
+            <h5 class="advantages-title few-tourists">Мало туристов</h5>
+            <svg width="60" height="2">
+              <line x="85" y="86" stroke="black" stroke-width="30"></line>
+            </svg>
+            <p class="advantages-description few-tourists">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+            <li class="advantages-item diable-bridge">
+              <div class="advantages-list-item image-container">
+                <img class="advantages-image diable-bridge" src="img/diable-bridge.jpg" alt="Мост дьявола" width="800" height="384">
+              </div>
+              <h5 class="advantages-title diable-bridge">Там есть Мост дьявола</h5>
+              <svg width="60" height="2">
+                <line x="85" y="86" stroke="black" stroke-width="30"></line>
+              </svg>
+              <p class="advantages-description diable-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
