@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: regular;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans" sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  background-color: white;
+}
+
+.page-header {
+  color: black;
+  background: white;
+}
+
+.navigation-link {
+  font-family: inherit;
+  line-height: 24px;
+  font-weight: inherit;
+  text-align: left;
+  color: inherit;
+  background: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.main-index {
+  color: black;
+  background-color: white;
+  background-image: url("../img/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.description-container {
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-item-title {
+
+}
