@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: black;
@@ -46,14 +46,141 @@ body {
   background-repeat: no-repeat;
 }
 
+h1 {
+  visibility: hidden;
+}
+
 .description-container {
   text-align: center;
+}
+
+h2 {
+  visibility: hidden;
 }
 
 .advantages-list {
   text-align: center;
 }
 
-.advantages-item-title {
+.real-town
+.diable-bridge {
+  color: white;
+  background-color: #82B3D3;
+}
 
+.real-town h3,
+.diable-bridge h3 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 28;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: inherit;
+}
+
+.real-town p,
+.diable-bridge p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18;
+  line-height: 21;
+  text-align: inherit;
+  text-transform: none;
+  background-color: inherit;
+}
+
+.small-area,
+.beautiful-road,
+.residence,
+.gifts {
+  font-family: inherit;
+  font-weight: 400;
+  color: black;
+  background-color: #83B3D31F;
+}
+
+.food,
+.hotel-searching {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22;
+  line-height: 28;
+  text-align: center;
+  text-transform: none;
+  color: black;
+  background-color: white;
+}
+
+.small-area-title,
+.beautiful-road-title,
+.few-tourists-title,
+.residence-title,
+.food-title,
+.gifts-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 28;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: inherit;
+}
+
+.hotel-searching-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 28px;
+  text-align: inherit;
+  text-transform: uppercase;
+  background-color: inherit;
+}
+
+.food-paragraph,
+.hotel-searching-paragraph {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: inherit;
+}
+
+.newsletter-subscribe {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: none;
+  background-color: #ffffff;
+  background-image: url("../img/background-email-subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-subscribe-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 30;
+  line-height: 36;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: white;
+  background-image: inherit;
+}
+
+.newsletter-subscribe-paragraph {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: inherit;
+  background-image: inherit;
 }
