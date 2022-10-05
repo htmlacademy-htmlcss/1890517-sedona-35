@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  font-style: regular;
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: regular;
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -16,10 +16,22 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   color: black;
   background-color: white;
+}
+
+button {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .page-header {
@@ -28,7 +40,7 @@ body {
 }
 
 .navigation-link {
-  font-family: inherit;
+  font-family: "PT-Sans", sans-serif;
   line-height: 24px;
   font-weight: inherit;
   text-align: left;
@@ -39,10 +51,14 @@ body {
 }
 
 .main-index {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
   color: black;
   background-color: white;
   background-image: url("../img/background.jpg");
-  background-size: 100% auto;
+  background-size: 1200 485;
   background-repeat: no-repeat;
 }
 
@@ -50,8 +66,18 @@ h1 {
   visibility: hidden;
 }
 
-.description-container {
+.main-logo-container {
   text-align: center;
+}
+
+.description-container {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 
 h2 {
@@ -59,11 +85,22 @@ h2 {
 }
 
 .advantages-list {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
+  color: black;
+  background-color: white;
 }
 
 .real-town
 .diable-bridge {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
   color: white;
   background-color: #82B3D3;
 }
@@ -72,7 +109,7 @@ h2 {
 .diable-bridge h3 {
   font-family: inherit;
   font-weight: 700;
-  font-size: 24;
+  font-size: 24px;
   line-height: 28;
   text-align: center;
   text-transform: uppercase;
@@ -84,7 +121,7 @@ h2 {
 .diable-bridge p {
   font-family: inherit;
   font-weight: 400;
-  font-size: 18;
+  font-size: 18px;
   line-height: 21;
   text-align: inherit;
   text-transform: none;
@@ -97,6 +134,10 @@ h2 {
 .gifts {
   font-family: inherit;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 21;
+  text-align: center;
+  text-transform: none;
   color: black;
   background-color: #83B3D31F;
 }
@@ -105,7 +146,7 @@ h2 {
 .hotel-searching {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 22;
+  font-size: 22px;
   line-height: 28;
   text-align: center;
   text-transform: none;
@@ -121,7 +162,7 @@ h2 {
 .gifts-title {
   font-family: inherit;
   font-weight: 700;
-  font-size: 24;
+  font-size: 24px;
   line-height: 28;
   text-align: center;
   text-transform: uppercase;
@@ -129,13 +170,30 @@ h2 {
   background-color: inherit;
 }
 
+.small-area-paragraph,
+.beautiful-road-paragraph,
+.few-tourists-paragraph,
+.residence-paragraph,
+.food-paragraph
+.gifts-paragraph {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
 .hotel-searching-title {
   font-family: inherit;
   font-weight: 700;
-  font-size: 24;
+  font-size: 24px;
   line-height: 28px;
   text-align: inherit;
   text-transform: uppercase;
+  color: #000;
   background-color: inherit;
 }
 
@@ -157,21 +215,23 @@ h2 {
   line-height: 26px;
   text-align: center;
   text-transform: none;
-  background-color: #ffffff;
   background-image: url("../img/background-email-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: 1200 415;
   background-repeat: no-repeat;
 }
 
 .newsletter-subscribe-title {
   font-family: inherit;
   font-weight: 700;
-  font-size: 30;
-  line-height: 36;
+  font-size: 30px;
+  line-height: 36px;
   text-align: left;
   text-transform: uppercase;
-  background-color: white;
+  color: #000;
+  background-color: inherit;
   background-image: inherit;
+  background-size: inherit;
+  background-repeat: inherit;
 }
 
 .newsletter-subscribe-paragraph {
@@ -181,6 +241,183 @@ h2 {
   line-height: inherit;
   text-align: inherit;
   text-transform: inherit;
+  color: #000;
   background-color: inherit;
   background-image: inherit;
+  background-size: inherit;
+  background-repeat: inherit;
+}
+
+.page-footer {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+}
+
+.page-footer a {
+  visibility: hidden;
+}
+
+.contacts-phone {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+.inner-header-title {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filters {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  background-image: url("../img/breadcrumbs.jpg");
+}
+
+.sorting-container {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.button-light {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.hotel-cards {
+  color: #000;
+  background-color: #ffffff;
+}
+
+.hotel-cards-link {
+  text-decoration: none;
+}
+
+.hotel-cards-title {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.hotel-cards-description {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+  background-color: inherit;
+}
+
+.hotel-price-description {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: right;
+  color: inherit;
+  background-color: inherit;
+}
+
+.button-able {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.button-disable,
+.button-submit {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.more-information-button {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.rating-button {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  background-color: #F2F2F2;
+}
+
+.pagination {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-current,
+.fourth-link {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  background-color: #F2F2F2;
 }
