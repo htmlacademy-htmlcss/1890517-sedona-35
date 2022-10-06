@@ -19,8 +19,8 @@ body {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 button {
@@ -35,8 +35,8 @@ button {
 }
 
 .page-header {
-  color: black;
-  background: white;
+  color: #000000;
+  background: #ffffff;
 }
 
 .navigation-list {
@@ -72,8 +72,8 @@ button {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #ffffff;
   background-image: url("../img/background.jpg");
   background-size: 1200 485;
   background-repeat: no-repeat;
@@ -93,8 +93,8 @@ button {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #000000;
 }
 
 h2 {
@@ -108,8 +108,8 @@ h2 {
   line-height: 26px;
   list-style: none;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .real-town
