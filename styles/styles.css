@@ -39,14 +39,31 @@ button {
   background: white;
 }
 
+.navigation-list {
+  list-style: none;
+}
+
 .navigation-link {
   font-family: "PT-Sans", sans-serif;
+  font-style: normal;
   line-height: 24px;
   font-weight: inherit;
   text-align: left;
   color: inherit;
   background: inherit;
   text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-list-item .navigation-link-current {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: inherit;
+  text-align: left;
+  color: inherit;
+  background: inherit;
+  text-decoration: underline;
   text-transform: capitalize;
 }
 
@@ -62,7 +79,7 @@ button {
   background-repeat: no-repeat;
 }
 
-h1 {
+.visually-hidden {
   visibility: hidden;
 }
 
@@ -89,9 +106,14 @@ h2 {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
+  list-style: none;
   text-align: center;
   color: black;
   background-color: white;
+}
+
+.advantages-item {
+  list-style: none;
 }
 
 .real-town
@@ -101,94 +123,173 @@ h2 {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: white;
+  text-decoration: none;
+  color: #ffffff;
   background-color: #82B3D3;
 }
 
 .real-town h3,
 .diable-bridge h3 {
   font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
-  color: inherit;
-  background-color: inherit;
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
-.real-town p,
-.diable-bridge p {
+.real-town-paragraph,
+.diable-bridge-paragraph {
   font-family: inherit;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21;
   text-align: inherit;
+  text-decoration: none;
   text-transform: none;
-  background-color: inherit;
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .small-area,
-.beautiful-road,
-.residence,
+.few-tourists,
+.residence
 .gifts {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21;
-  text-align: center;
-  text-transform: none;
-  color: black;
-  background-color: #83B3D31F;
-}
-
-.food,
-.hotel-searching {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 28;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21;
+  list-style: none;
   text-align: center;
+  text-decoration: none;
   text-transform: none;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .small-area-title,
-.beautiful-road-title,
 .few-tourists-title,
 .residence-title,
-.food-title,
 .gifts-title {
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 28;
+  list-style: inherit;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
-  color: inherit;
-  background-color: inherit;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .small-area-paragraph,
-.beautiful-road-paragraph,
 .few-tourists-paragraph,
 .residence-paragraph,
-.food-paragraph
 .gifts-paragraph {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  text-transform: inherit;
-  color: inherit;
-  background-color: inherit;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.beautiful-road,
+.diable-bridge {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.beautiful-road-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.beautiful-road-paragraph {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.food-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.food-paragraph {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel-searching {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 28;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+  background: none;
 }
 
 .hotel-searching-title {
   font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 28px;
   text-align: inherit;
@@ -200,6 +301,7 @@ h2 {
 .food-paragraph,
 .hotel-searching-paragraph {
   font-family: inherit;
+  font-style: normal;
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -208,24 +310,40 @@ h2 {
   background-color: inherit;
 }
 
+.searh-link button {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .newsletter-subscribe {
   font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
+  font-style: normal;
   line-height: 26px;
   text-align: center;
   text-transform: none;
   background-image: url("../img/background-email-subscribe.jpg");
-  background-size: 1200 415;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .newsletter-subscribe-title {
   font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 30px;
   line-height: 36px;
   text-align: left;
+  visibility: visible;
   text-transform: uppercase;
   color: #000;
   background-color: inherit;
@@ -238,14 +356,11 @@ h2 {
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
+  font-style: normal;
   line-height: inherit;
   text-align: inherit;
   text-transform: inherit;
   color: #000;
-  background-color: inherit;
-  background-image: inherit;
-  background-size: inherit;
-  background-repeat: inherit;
 }
 
 .page-footer {
@@ -261,21 +376,23 @@ h2 {
   background-color: #ffffff;
 }
 
-.page-footer a {
+.footer-social-list {
   visibility: hidden;
+  list-style: none;
 }
 
-.contacts-phone {
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  text-transform: inherit;
-  text-decoration: inherit;
-  color: inherit;
-  background-color: inherit;
+.footer-contacts-phone {
+  font-family: "PT-Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.page-footer .htmlacademy-link {
+  color: #000;
 }
 
 .inner-header-title {
@@ -302,6 +419,11 @@ h2 {
   line-height: 23px;
   color: #ffffff;
   background-image: url("../img/breadcrumbs.jpg");
+  background-size: cover;
+}
+
+.catalog-filter-list {
+  list-style: none;
 }
 
 .sorting-container {
@@ -314,7 +436,8 @@ h2 {
   background-color: #ffffff;
 }
 
-.hotel-cards {
+.hotel-cards-list {
+  list-style: none;
   color: #000;
   background-color: #ffffff;
 }
@@ -325,11 +448,12 @@ h2 {
 
 .hotel-cards-title {
   font-family: "PT-Sans", sans-serif;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: inherit;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #000;
   background-color: inherit;
 }
 
@@ -339,18 +463,55 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: inherit;
+  text-align: left;
+  color: #333333;
   background-color: inherit;
 }
 
 .hotel-price-description {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+  background-color: inherit;
+}
+
+.order-button {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
+  border: none;
   line-height: 36px;
-  text-align: right;
-  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.filter-apply-uppercase {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.filter-reset-uppercase {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  line-height: 20px;
+  color: #ffffff;
   background-color: inherit;
 }
 
@@ -359,6 +520,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
+  border: none;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
@@ -371,6 +533,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
+  border: none;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
@@ -382,8 +545,10 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
+  border: none;
   line-height: 36px;
   text-align: center;
+  text-decoration: none;
   color: #ffffff;
   background-color: #756157;
 }
@@ -393,21 +558,29 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  border: none;
   line-height: 20px;
   text-align: center;
+  text-decoration: none;
   color: #000;
   background-color: #F2F2F2;
 }
 
-.pagination {
+.pagination-list {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
+  list-style: none;
+  border: none;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.pagination-link {
+  text-decoration: none;
 }
 
 .pagination-current,
