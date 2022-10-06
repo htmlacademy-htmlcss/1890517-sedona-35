@@ -116,8 +116,8 @@ h2 {
 .diable-bridge {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -127,15 +127,9 @@ h2 {
 .real-town h3,
 .diable-bridge h3 {
   font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #82B3D3;
 }
 
 .real-town-paragraph,
@@ -143,13 +137,6 @@ h2 {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21;
-  text-align: inherit;
-  text-decoration: none;
-  text-transform: none;
-  color: #ffffff;
-  background-color: #82B3D3;
 }
 
 .small-area,
@@ -210,9 +197,10 @@ h2 {
   font-style: normal;
   font-size: 18px;
   line-height: 21;
+  list-style: none;
   text-align: center;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.2);
 }
