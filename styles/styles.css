@@ -74,8 +74,9 @@ button {
   color: #000;
   background-color: #ffffff;
   background-image: url("../img/background.jpg");
-  background-size: 1200 485;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: absolute;
 }
 
 .visually-hidden {
@@ -321,7 +322,8 @@ a.button {
   text-transform: none;
   background-image: url("../img/background-email-subscribe.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
+  background-position: absolute;
   background-color: #ffffff;
 }
 
