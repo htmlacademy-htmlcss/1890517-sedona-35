@@ -179,22 +179,16 @@ button {
   list-style: none;
   text-align: center;
   text-decoration: none;
-  text-transform: inherit;
+  text-transform: none;
   color: #333333;
   background-color: #FFFFFF;
 }
 
 .food-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 24px;
   line-height: 28;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  color: inherit;
-  background-color: inherit;
 }
 
 .hotel-searching {
@@ -206,32 +200,15 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  color: #000;
+  color: #000000;
   background: none;
 }
 
 .hotel-searching-title {
-  font-family: inherit;
   font-weight: 700;
-  font-style: normal;
   font-size: 24px;
   line-height: 28px;
-  text-align: inherit;
   text-transform: uppercase;
-  color: #000;
-  background-color: inherit;
-}
-
-.food-paragraph,
-.hotel-searching-paragraph {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-align: inherit;
-  text-transform: inherit;
-  background-color: inherit;
 }
 
 a.button {
@@ -257,34 +234,20 @@ a.button {
   background-image: url("../img/background-email-subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat, no-repeat;
-  background-position: absolute;
   background-color: #ffffff;
 }
 
 .newsletter-subscribe-title {
-  font-family: inherit;
   font-weight: 700;
-  font-style: normal;
   font-size: 30px;
   line-height: 36px;
   text-align: left;
   visibility: visible;
   text-transform: uppercase;
-  color: #000;
-  background-color: inherit;
-  background-image: inherit;
-  background-size: inherit;
-  background-repeat: inherit;
+  color: #000000;
 }
 
 .newsletter-subscribe-paragraph {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  font-style: normal;
-  line-height: inherit;
-  text-align: inherit;
-  text-transform: inherit;
   color: #000;
 }
 
@@ -320,23 +283,9 @@ a.button {
   color: #000;
 }
 
-.inner-header-title {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.breadcrumbs {
-  color: #ffffff;
-}
-
-.breadcrumbs-link {
-  color: inherit;
-}
-
-.catalog-filters {
+.inner-header,
+.catalog-products-container,
+.breadcrumbs-list {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -345,6 +294,23 @@ a.button {
   color: #ffffff;
   background-image: url("../img/breadcrumbs.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-list {
+  font-size: 16px;
+  line-height: 21px;
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: inherit;
 }
 
 .catalog-filter-list {
@@ -361,10 +327,19 @@ a.button {
   background-color: #ffffff;
 }
 
-.hotel-cards-list {
-  list-style: none;
+.hotel-cards {
+  font-family: "PT-Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
   color: #000;
   background-color: #ffffff;
+}
+
+.hotel-cards-list {
+  list-style: none;
 }
 
 .hotel-cards-link {
@@ -372,36 +347,19 @@ a.button {
 }
 
 .hotel-cards-title {
-  font-family: "PT-Sans", sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: left;
-  color: #000;
-  background-color: inherit;
 }
 
 .hotel-cards-description {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: left;
   color: #333333;
-  background-color: inherit;
 }
 
 .hotel-price-description {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-align: right;
   color: #333333;
-  background-color: inherit;
 }
 
 .order-button {
@@ -511,8 +469,6 @@ a.button {
 
 .pagination-current,
 .fourth-link {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
