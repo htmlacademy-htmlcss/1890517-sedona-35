@@ -55,15 +55,7 @@ button {
 }
 
 .navigation-list-item .navigation-link-current {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  line-height: 24px;
-  font-weight: inherit;
-  text-align: left;
-  color: inherit;
-  background: inherit;
   text-decoration: underline;
-  text-transform: capitalize;
 }
 
 .main-index {
@@ -73,10 +65,6 @@ button {
   line-height: 26px;
   color: #000;
   background-color: #ffffff;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: absolute;
 }
 
 .visually-hidden {
@@ -85,6 +73,9 @@ button {
 
 .main-logo-container {
   text-align: center;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .description-container {
@@ -93,11 +84,8 @@ button {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #000000;
-}
-
-h2 {
-  visibility: hidden;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .advantages-list {
@@ -111,7 +99,7 @@ h2 {
   background-color: #ffffff;
 }
 
-.real-town
+.real-town,
 .diable-bridge {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -125,24 +113,12 @@ h2 {
   background-color: #82B3D3;
 }
 
-.real-town h3,
-.diable-bridge h3 {
-  font-family: inherit;
+.real-town-title,
+.diable-bridge-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
-.real-town-paragraph,
-.diable-bridge-paragraph {
-  font-weight: 400;
-  line-height: 21;
-  color: #ffffff;
-  text-transform: none;
-  background-color: #82B3D3;
 }
 
 .small-area,
@@ -158,7 +134,7 @@ h2 {
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  color: #000;
+  color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -166,23 +142,13 @@ h2 {
 .few-tourists-title,
 .residence-title,
 .gifts-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 24px;
   line-height: 28;
-  list-style: inherit;
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.small-area-paragraph,
-.few-tourists-paragraph,
-.residence-paragraph,
-.gifts-paragraph {
+.beautiful-road {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -193,11 +159,17 @@ h2 {
   text-decoration: none;
   text-transform: none;
   color: #333333;
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.beautiful-road,
-.diable-bridge,
+.beautiful-road-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .food {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -207,34 +179,9 @@ h2 {
   list-style: none;
   text-align: center;
   text-decoration: none;
-  text-transform: none;
+  text-transform: inherit;
   color: #333333;
-}
-
-.beautiful-road-title {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 28;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.beautiful-road-paragraph {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #333333;
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: #FFFFFF;
 }
 
 .food-title {
@@ -248,19 +195,6 @@ h2 {
   text-transform: uppercase;
   color: inherit;
   background-color: inherit;
-}
-
-.food-paragraph {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21;
-  text-align: center;
-  text-decoration: none;
-  text-transform: inherit;
-  color: #333333;
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .hotel-searching {

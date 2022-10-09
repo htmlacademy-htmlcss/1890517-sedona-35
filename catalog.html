@@ -53,8 +53,8 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-list-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
             <a class="breadcrumbs-link">Каталог</a>
           </li>
@@ -62,64 +62,67 @@
       </header>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список услуг с фильтрами</h2>
-        <form class="catalog-filters" action="https://echo.htmlacademy" method="get">
-          <fieldset class="catalog-filter-group infrastructure">
-            <legend class="catalog-filter-title infrastructure">Инфраструктура</legend>
-            <ul class="catalog-filter-list infrastructure">
-              <li class="catalog-filter-item swimming-pool">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="name-swimming-pool" checked>
-                </label>
-                Бассейн
-              </li>
-              <li class="catalog-filter-item parking">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="name-parking" checked>
-                </label>
-                Парковка
-              </li>
-              <li class="catalog-filter-item wifi">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="name-wifi">
-                </label>
-                Wi-fi
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group living">
-            <legend class="catalog-filter-title living">Тип жилья</legend>
-            <ul class="catalog-filter-list living">
-              <li class="catalog-filter-item hotel">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="product-group" value="living-items" checked>
-                </label>
-                Гостиница
-              </li>
-              <li class="catalog-filter-item motel">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="product-group" value="living-items">
-                  Мотель
-                </label>
-              </li>
-              <li class="catalog-filter-item appartements">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="product-group" id="checkbox" value="living-items">
-                  Аппартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <!----Надписи "От" и "До" пока не размечала----->
-          <fieldset class="catalog-fiter-group price-range">
-            <legend class="catalog-filter-title">Стоимость, &#8381;</legend>
-            <label class="price" for="range">
-              <input class="price-range" type="range" min="0" max="9000" step="1000" name="price-range" id="range">
-            </label>
-          </fieldset>
-          <button class="filter-apply-uppercase button" type="submit">Применить</button>
-          <button class="filter-reset-uppercase button" type="reset">Сбросить</button>
-        </form>
+        <div class="catalog-products-container">
+          <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+          <form class="catalog-filters" action="https://echo.htmlacademy" method="get">
+            <fieldset class="catalog-filter-group infrastructure">
+              <legend class="catalog-filter-title infrastructure">Инфраструктура</legend>
+              <ul class="catalog-filter-list infrastructure">
+                <li class="catalog-filter-item swimming-pool">
+                  <label class="control-label">
+                    <input class="control-input" type="checkbox" name="name-swimming-pool" checked>
+                  </label>
+                  Бассейн
+                </li>
+                <li class="catalog-filter-item parking">
+                  <label class="control-label">
+                    <input class="control-input" type="checkbox" name="name-parking" checked>
+                  </label>
+                  Парковка
+                </li>
+                <li class="catalog-filter-item wifi">
+                  <label class="control-label">
+                    <input class="control-input" type="checkbox" name="name-wifi">
+                  </label>
+                  Wi-fi
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group living">
+              <legend class="catalog-filter-title living">Тип жилья</legend>
+              <ul class="catalog-filter-list living">
+                <li class="catalog-filter-item hotel">
+                  <label class="control-label">
+                    <input class="control-input" type="radio" name="product-group" value="living-items" checked>
+                  </label>
+                  Гостиница
+                </li>
+                <li class="catalog-filter-item motel">
+                  <label class="control-label">
+                    <input class="control-input" type="radio" name="product-group" value="living-items">
+                    Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item appartements">
+                  <label class="control-label">
+                    <input class="control-input" type="radio" name="product-group" id="checkbox" value="living-items">
+                    Аппартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!----Надписи "От" и "До" пока не размечала----->
+            <fieldset class="catalog-fiter-group price-range">
+              <legend class="catalog-filter-title">Стоимость, &#8381;</legend>
+              <label class="price" for="range">
+                <input class="price-range" type="range" min="0" max="9000" step="1000" name="price-range" id="range">
+              </label>
+            </fieldset>
+            <button class="filter-apply-uppercase button" type="submit">Применить</button>
+            <button class="filter-reset-uppercase button" type="reset">Сбросить</button>
+          </form>
+        </div>
+
         <!--Все остальное разметила-->
         <div class="sorting-container">
           <select class="select-control" aria-label="Сортировка">
