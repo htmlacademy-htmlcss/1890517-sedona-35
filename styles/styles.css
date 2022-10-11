@@ -15,11 +15,19 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
+}
+
+html {
+  height: 100%;
 }
 
 button {
@@ -38,8 +46,23 @@ button {
   background: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200;
+  height: 64;
+}
+
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 607px;
+  height: 128px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -67,6 +90,25 @@ button {
   background-color: #ffffff;
 }
 
+.main-inner {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000;
+  background-color: #ffffff;
+}
+
+.page-container {
+  width: 1280;
+  margin: 0 auto;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   visibility: hidden;
 }
@@ -89,6 +131,11 @@ button {
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -99,8 +146,16 @@ button {
   background-color: #ffffff;
 }
 
+.advantages-item {
+  width: 400px;
+  height: 384px;
+}
+
 .real-town,
 .diable-bridge {
+  width: 1280px;
+  height: 384px;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -125,6 +180,9 @@ button {
 .few-tourists,
 .residence,
 .gifts {
+  width: 400;
+  height: 384;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -149,6 +207,9 @@ button {
 }
 
 .beautiful-road {
+  width: 400;
+  height: 384;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -171,6 +232,9 @@ button {
 }
 
 .food {
+  width: 400px;
+  height: 384px;
+  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -192,6 +256,13 @@ button {
 }
 
 .hotel-searching {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 384px;
+  gap: 10px;
+  width: 1200px;
+  height: 486px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -224,6 +295,14 @@ a.button {
 }
 
 .newsletter-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 258px 184px;
+  gap: 10px;
+  width: 1200px;
+  height: 415px;
   font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -252,6 +331,11 @@ a.button {
 }
 
 .page-footer {
+  width: 1200px;
+  height: 120px;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
