@@ -132,8 +132,6 @@ button {
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -153,9 +151,9 @@ button {
 
 .real-town,
 .diable-bridge {
-  width: 1280px;
+  display: flex;
+  width: 1200px;
   height: 384px;
-  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -176,13 +174,19 @@ button {
   text-transform: uppercase;
 }
 
+.real-town-image {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .small-area,
 .few-tourists,
 .residence,
 .gifts {
+  display: flex;
   width: 400;
   height: 384;
-  justify-content: space-between;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
