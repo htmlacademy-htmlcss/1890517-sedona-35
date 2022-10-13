@@ -130,6 +130,15 @@ button {
   background-color: #ffffff;
 }
 
+.adavantages {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
 .advantages-list {
   display: flex;
   margin: 0;
@@ -142,6 +151,9 @@ button {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
@@ -152,6 +164,8 @@ button {
 .real-town,
 .diable-bridge {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   width: 1200px;
   height: 384px;
   font-family: "PT Sans", sans-serif;
@@ -168,16 +182,30 @@ button {
 
 .real-town-title,
 .diable-bridge-title {
+  width: 175px;
+  height: 56px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28;
+  line-height: 28px;
   text-transform: uppercase;
+  justify-self: center;
+  padding-top: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 125px;
+  margin-top: 92px;
+  margin-left: 113px;
+  margin-right: 113px;
+  margin-bottom: 236px;
 }
 
 .real-town-image {
+  width: 800px;
+  height: 385px;
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 0;
 }
 
 .small-area,
@@ -185,7 +213,9 @@ button {
 .residence,
 .gifts {
   display: flex;
-  width: 400;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
   height: 384;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -210,6 +240,10 @@ button {
   text-transform: uppercase;
 }
 
+.small-area-paragraph {
+  justify-content: center;
+}
+
 .beautiful-road {
   width: 400;
   height: 384;
@@ -230,7 +264,7 @@ button {
 .beautiful-road-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28;
+  line-height: 28px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -243,7 +277,7 @@ button {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 21;
+  line-height: 21px;
   list-style: none;
   text-align: center;
   text-decoration: none;
@@ -255,7 +289,7 @@ button {
 .food-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
@@ -263,7 +297,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 384px;
   gap: 10px;
   width: 1200px;
   height: 486px;
@@ -271,7 +304,7 @@ button {
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
-  line-height: 28;
+  line-height: 28px;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -303,7 +336,6 @@ a.button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 258px 184px;
   gap: 10px;
   width: 1200px;
   height: 415px;
@@ -368,7 +400,11 @@ a.button {
 }
 
 .page-footer .htmlacademy-link {
+  display: flex;
+  justify-content: end;
   color: #000;
+  position: relative;
+  right: -100px;
 }
 
 .inner-header,
