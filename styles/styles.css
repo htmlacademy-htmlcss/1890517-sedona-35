@@ -58,12 +58,14 @@ button {
 }
 
 .page-header {
+  display: flex;
+  flex-direction: row;
   color: #000000;
   background: #ffffff;
 }
 
 .navigation {
-  width: 1200;
+  width: 1200px;
 }
 
 .navigation-list {
@@ -262,7 +264,7 @@ button {
 
 .beautiful-road {
   display: flex;
-  max-height: 384px;
+  flex-direction: column;
   max-width: 400px;
   justify-content: center;
   font-family: "PT Sans", sans-serif;
@@ -276,6 +278,7 @@ button {
   text-transform: none;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.2);
+  margin: 0 auto;
 }
 
 .beautiful-road-title {
@@ -327,6 +330,7 @@ button {
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
+  max-height: 406px;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
@@ -357,7 +361,6 @@ a.button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 1200px;
   font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -381,10 +384,8 @@ a.button {
 }
 
 .page-footer {
-  width: 1200px;
-  flex: none;
-  order: 5;
-  flex-grow: 0;
+  display: flex;
+  max-height: 1200px;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -393,8 +394,25 @@ a.button {
   text-align: center;
   text-transform: none;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 120px;
+  max-width: 1200px;
+}
+
+.social-nets {
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-social-list {
