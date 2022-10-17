@@ -58,25 +58,27 @@ button {
 }
 
 .page-header {
-  display: flex;
+  width: 1200px;
+  height: 64px;
   flex-direction: row;
   color: #000000;
   background: #ffffff;
 }
 
 .navigation {
-  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1090px;
+  align-items: center;
 }
 
 .navigation-list {
   display: flex;
   flex-direction: row;
-  align-self: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
   max-width: 1200px;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -130,8 +132,7 @@ button {
 }
 
 .visually-hidden {
-  visibility: hidden;
-}
+  display: none;}
 
 .main-logo-container {
   text-align: center;
@@ -186,8 +187,7 @@ button {
     padding: 0;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    max-height: 384px;
+    max-width: 400px;
     justify-content: center;
     align-items: center;
 }
@@ -264,9 +264,9 @@ button {
 
 .beautiful-road {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  min-height: 384px;
   max-width: 400px;
-  justify-content: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -277,8 +277,7 @@ button {
   text-decoration: none;
   text-transform: none;
   color: #333333;
-  background-color: rgba(131, 179, 211, 0.2);
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .beautiful-road-title {
@@ -398,29 +397,18 @@ a.button {
   background-color: #ffffff;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  max-height: 120px;
-  max-width: 1200px;
-}
-
-.social-nets {
-  display: flex;
-  flex-direction: row;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: row;
-}
-
 .footer-social-list {
   visibility: hidden;
   list-style: none;
 }
 
 .footer-contacts-phone {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+  visibility: visible;
+  margin: 0 auto;
   font-family: "PT-Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
@@ -432,6 +420,8 @@ a.button {
 
 .page-footer .htmlacademy-link {
   display: flex;
+  flex-direction: row;
+  visibility: visible;
   justify-content: end;
   color: #000;
   position: relative;
@@ -498,6 +488,7 @@ a.button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .hotel-cards-link {
