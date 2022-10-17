@@ -385,6 +385,7 @@ a.button {
 .page-footer {
   display: flex;
   max-height: 1200px;
+  justify-content: space-between;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
