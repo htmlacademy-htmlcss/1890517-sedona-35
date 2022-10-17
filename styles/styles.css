@@ -174,7 +174,7 @@ button {
   color: #000000;
   background-color: #ffffff;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -232,9 +232,12 @@ button {
 .residence,
 .gifts {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   min-height: 384px;
-  max-width: 400px;
+  min-width: 400px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -246,10 +249,6 @@ button {
   text-transform: none;
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.small-area {
-  right: 0;
 }
 
 .small-area-title,
@@ -265,6 +264,7 @@ button {
 .beautiful-road {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 384px;
   max-width: 400px;
   font-family: "PT Sans", sans-serif;
@@ -384,6 +384,7 @@ a.button {
 
 .page-footer {
   display: flex;
+  flex-direction: row;
   max-height: 1200px;
   justify-content: space-between;
   font-family: "PT-Sans", sans-serif;
@@ -420,13 +421,11 @@ a.button {
 }
 
 .page-footer .htmlacademy-link {
-  display: flex;
   flex-direction: row;
   visibility: visible;
   justify-content: end;
   color: #000;
   position: relative;
-  right: -100px;
 }
 
 .inner-header,
@@ -602,8 +601,7 @@ a.button {
 .pagination-list {
   display: flex;
   flex-direction: row;
-  margin: 70px;
-  padding: 70px;
+  justify-content: flex-start;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -614,10 +612,6 @@ a.button {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
-}
-
-.pagination-item {
-  flex-basis: auto;
 }
 
 .pagination-link {
