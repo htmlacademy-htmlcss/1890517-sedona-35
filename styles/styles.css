@@ -73,18 +73,51 @@ button {
 }
 
 .navigation-list {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
   max-width: 1200px;
   align-items: flex-start;
+  justify-content: center;
+}
+
+.navigation-list-item {
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.navigation-list-item .navigation-link-current {
+  margin-left: 30px;
+}
+
+.logo-container {
+  margin-right: 30px;
+}
+
+.logo-item {
+  padding-top: 0;
 }
 
 .navigation-user {
-  max-width: 250px;
+  display: flex;
+  flex-direction: row;
+  max-width: 268px;
+  min-height: 64px;
   margin-left: auto;
+  margin-right: 70px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 22px;
 }
 
 .navigation-link {
@@ -110,6 +143,7 @@ button {
   line-height: 26px;
   color: #000;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .main-inner {
@@ -119,6 +153,7 @@ button {
   line-height: 26px;
   color: #000;
   background-color: #ffffff;
+  margin-top: 64px;
 }
 
 .page-container {
@@ -132,6 +167,8 @@ button {
 }
 
 .visually-hidden {
+  width: 44px;
+  height: 64px;
   display: none;}
 
 .main-logo-container {
@@ -139,6 +176,7 @@ button {
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 82px;
 }
 
 .description-container {
@@ -149,6 +187,7 @@ button {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
+  margin-bottom: 90px;
 }
 
 .advantages {
