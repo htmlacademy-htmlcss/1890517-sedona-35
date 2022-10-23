@@ -23,7 +23,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 html {
@@ -47,6 +47,7 @@ button {
 }
 
 .order-button {
+  font-family: "PT-Sans", sans-serif;
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
@@ -55,6 +56,15 @@ button {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
 }
 
 .page-header {
@@ -74,7 +84,7 @@ button {
 }
 
 .navigation-list {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -97,6 +107,7 @@ button {
 
 .navigation-list-item .navigation-link-current {
   margin-left: 30px;
+  text-decoration: underline;
 }
 
 .logo-container {
@@ -133,16 +144,12 @@ button {
   text-transform: capitalize;
 }
 
-.navigation-list-item .navigation-link-current {
-  text-decoration: underline;
-}
-
 .main-index {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
   padding: 0;
 }
@@ -152,7 +159,7 @@ button {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
   margin-top: 64px;
 }
@@ -245,7 +252,7 @@ button {
   text-transform: none;
   text-decoration: none;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .real-town-title,
@@ -394,8 +401,8 @@ a.button {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -465,14 +472,14 @@ a.button {
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .page-footer .htmlacademy-link {
   flex-direction: row;
   visibility: visible;
   justify-content: end;
-  color: #000;
+  color: #000000;
   position: relative;
 }
 
@@ -535,13 +542,6 @@ a.button {
   margin-right: 32px;
 }
 
-.sorting-container {
-  display: flex;
-  flex-direction: row;
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .sorting-container .button {
   width: 56px;
   height: 44px;
@@ -554,13 +554,13 @@ a.button {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .hotel-cards-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   list-style: none;
   margin-bottom: 80px;
@@ -569,12 +569,9 @@ a.button {
 .hotel-cards-list-item {
   display: flex;
   flex-direction: column;
-  width: 340px;
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 .hotel-cards-link {
@@ -609,19 +606,6 @@ a.button {
   color: #333333;
 }
 
-.order-button {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  border: none;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #756157;
-}
-
 .filter-apply-uppercase {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
@@ -631,7 +615,7 @@ a.button {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .filter-reset-uppercase {
@@ -649,12 +633,12 @@ a.button {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
-  line-height: 36px;
   text-align: center;
   color: #ffffff;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-disable,
@@ -662,12 +646,12 @@ a.button {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
   border: none;
-  line-height: 36px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .more-information-button {
@@ -678,7 +662,6 @@ a.button {
   min-height: 30px;
   min-width: 30px;
   align-self: flex-start;
-  margin-right: 20px;
   padding-right: 26px;
   padding-left: 26px;
   padding-top: 8px;
@@ -704,8 +687,8 @@ a.button {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: #000;
-  background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .pagination {
@@ -741,7 +724,7 @@ a.button {
   line-height: 16px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   text-decoration: none;
 }
 
@@ -751,6 +734,6 @@ a.button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #000;
-  background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
