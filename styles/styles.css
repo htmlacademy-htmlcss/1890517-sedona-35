@@ -35,17 +35,6 @@ html {
   margin: 0 auto;
 }
 
-button {
-  font-family: inherit;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .order-button {
   font-family: "PT-Sans", sans-serif;
   box-sizing: border-box;
@@ -66,7 +55,6 @@ button {
   font-weight: 700;
   font-size: 30px;
   border: none;
-  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -400,18 +388,6 @@ button {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-transform: uppercase;
-}
-
-a.button {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
