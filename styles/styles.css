@@ -23,7 +23,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 html {
@@ -35,26 +35,28 @@ html {
   margin: 0 auto;
 }
 
-button {
-  font-family: inherit;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
-  background-color: #756157;
-  text-decoration: none;
+.button {
   text-transform: uppercase;
 }
 
-.order-button {
-  box-sizing: border-box;
+.order {
   display: flex;
-  flex-wrap: nowrap;
-  border-radius: 4px;
-  width: 160px;
+  flex-direction: row;
   justify-content: center;
-  justify-items: center;
   align-items: center;
+  padding: 8px 50px 8px 50px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-bottom: 14px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
 }
 
 .page-header {
@@ -69,11 +71,12 @@ button {
   display: flex;
   flex-direction: row;
   max-width: 1090px;
+  margin-left: 70px;
   align-items: center;
 }
 
 .navigation-list {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -96,6 +99,7 @@ button {
 
 .navigation-list-item .navigation-link-current {
   margin-left: 30px;
+  text-decoration: underline;
 }
 
 .logo-container {
@@ -132,16 +136,12 @@ button {
   text-transform: capitalize;
 }
 
-.navigation-list-item .navigation-link-current {
-  text-decoration: underline;
-}
-
 .main-index {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
   padding: 0;
 }
@@ -151,7 +151,7 @@ button {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
   margin-top: 64px;
 }
@@ -169,7 +169,8 @@ button {
 .visually-hidden {
   width: 44px;
   height: 64px;
-  display: none;}
+  display: none;
+}
 
 .main-logo-container {
   text-align: center;
@@ -180,6 +181,11 @@ button {
 }
 
 .description-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -188,6 +194,17 @@ button {
   color: #333333;
   background-color: #ffffff;
   margin-bottom: 90px;
+}
+
+.description-title {
+  font-family: "PT Sans" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .advantages {
@@ -221,19 +238,21 @@ button {
   display: flex;
 }
 
-.advantages-item-container {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    justify-content: center;
-    align-items: center;
+.real-town-container {
+  margin: 0 auto;
+  padding-left: 85px;
+  padding-right: 85px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
 }
 
 .real-town,
 .diable-bridge {
   display: flex;
+  flex-direction: row;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -243,7 +262,23 @@ button {
   text-transform: none;
   text-decoration: none;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
+}
+
+.diable-bridge {
+  flex-direction: row-reverse;
+  min-height: 384px;
+}
+
+.diable-bridge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  margin: 0 auto;
+  min-height: 230px;
 }
 
 .real-town-title,
@@ -258,6 +293,7 @@ button {
 }
 
 .real-town-image {
+  display: block;
   width: 800px;
   height: 385px;
   flex: none;
@@ -266,9 +302,47 @@ button {
   margin-left: 0;
 }
 
-.small-area,
-.few-tourists,
-.residence,
+.diable-bridge-image {
+  display: block;
+  width: 800px;
+  height: 385px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.small-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 384px;
+  min-width: 400px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.small-area-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .gifts {
   display: flex;
   flex-direction: column;
@@ -290,44 +364,18 @@ button {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.small-area-title,
-.few-tourists-title,
-.residence-title,
-.gifts-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.beautiful-road {
+.gifts-container {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 384px;
-  max-width: 400px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  list-style: none;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  color: #333333;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  min-height: 384px;
+  max-width: 230px;
+  padding-right: 85px;
+  padding-left: 85px;
 }
 
-.beautiful-road-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.food {
+.few-tourists {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -344,6 +392,128 @@ button {
   text-align: center;
   text-decoration: none;
   text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.few-tourists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.residence {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.residence-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.small-area-title,
+.few-tourists-title,
+.residence-title,
+.gifts-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.beautiful-road {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  justify-content: center;
+}
+
+.beautiful-road-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: transparent;
+}
+
+.beautiful-road-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  justify-content: center;
+}
+
+.food-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: transparent;
 }
 
 .food-title {
@@ -374,7 +544,11 @@ button {
   max-height: 406px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  align-self: center;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  margin-right: 304px;
+  margin-left: 304px;
 }
 
 .hotel-searching-title {
@@ -384,16 +558,21 @@ button {
   text-transform: uppercase;
 }
 
-a.button {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #ffffff;
+.searching-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #756157;
+  color: #ffffff;
+  font-weight: 700;
   text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
   text-transform: uppercase;
+  min-width: 376px;
+  min-height: 52px;
 }
 
 .newsletter-subscribe {
@@ -422,6 +601,13 @@ a.button {
   text-align: left;
   visibility: visible;
   text-transform: uppercase;
+}
+
+.newsletter-subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer {
@@ -459,14 +645,14 @@ a.button {
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
 }
 
 .page-footer .htmlacademy-link {
   flex-direction: row;
   visibility: visible;
   justify-content: end;
-  color: #000;
+  color: #000000;
   position: relative;
 }
 
@@ -488,6 +674,9 @@ a.button {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding-top: 35px;
+  min-width: 495px;
+  margin-left: 70px;
 }
 
 .breadcrumbs-list {
@@ -505,13 +694,30 @@ a.button {
 }
 
 .sorting-container {
-  color: #000;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  padding: 16px;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .button-light {
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.sorting-container .button {
+  width: 56px;
+  height: 44px;
 }
 
 .hotel-cards {
@@ -521,16 +727,24 @@ a.button {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .hotel-cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   list-style: none;
+  margin-bottom: 80px;
+}
+
+.hotel-cards-list-item {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .hotel-cards-link {
@@ -541,29 +755,28 @@ a.button {
   font-style: bold;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 36px;
+  color: #000000;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .hotel-cards-description {
   color: #333333;
 }
 
+.hotel-card-description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
 .hotel-price-description {
   text-align: right;
   color: #333333;
-}
-
-.order-button {
-  font-family: "PT-Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  border: none;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #756157;
 }
 
 .filter-apply-uppercase {
@@ -575,7 +788,7 @@ a.button {
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .filter-reset-uppercase {
@@ -593,12 +806,12 @@ a.button {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
-  line-height: 36px;
   text-align: center;
   color: #ffffff;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-disable,
@@ -606,21 +819,32 @@ a.button {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
   border: none;
-  line-height: 36px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .more-information-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 30px;
+  min-width: 30px;
+  align-self: flex-start;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
   border: none;
-  line-height: 36px;
+  line-height: 20px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -636,14 +860,23 @@ a.button {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  color: #000;
-  background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 23px;
+  padding-right: 22px;
+}
+
+.pagination {
+  display: flex;
 }
 
 .pagination-list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: left;
+  align-items: stretch;
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -654,18 +887,22 @@ a.button {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+  min-width: 360px;
+  margin-left: 70px;
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
-  color: #ffff;
-}
-
-.pagination-two,
-.pagination-three,
-.pagination-four,
-.pagination-ten {
-  background-color: #82B3D3;
 }
 
 .pagination-current,
@@ -674,6 +911,6 @@ a.button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #000;
-  background-color: #F2F2F2;
+  color: #000000;
+  background-color: #f2f2f2;
 }
