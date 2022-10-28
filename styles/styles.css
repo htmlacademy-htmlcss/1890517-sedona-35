@@ -181,6 +181,11 @@ html {
 }
 
 .description-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -189,6 +194,17 @@ html {
   color: #333333;
   background-color: #ffffff;
   margin-bottom: 90px;
+}
+
+.description-title {
+  font-family: "PT Sans" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .advantages {
@@ -222,9 +238,10 @@ html {
   display: flex;
 }
 
-.advantages-item-container {
+.real-town-container {
   margin: 0 auto;
-  padding: 0;
+  padding-left: 85px;
+  padding-right: 85px;
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -235,6 +252,7 @@ html {
 .real-town,
 .diable-bridge {
   display: flex;
+  flex-direction: row;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -245,6 +263,22 @@ html {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
+}
+
+.diable-bridge {
+  flex-direction: row-reverse;
+  min-height: 384px;
+}
+
+.diable-bridge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 85px;
+  padding-right: 85px;
+  margin: 0 auto;
+  min-height: 230px;
 }
 
 .real-town-title,
@@ -259,6 +293,7 @@ html {
 }
 
 .real-town-image {
+  display: block;
   width: 800px;
   height: 385px;
   flex: none;
@@ -267,9 +302,47 @@ html {
   margin-left: 0;
 }
 
-.small-area,
-.few-tourists,
-.residence,
+.diable-bridge-image {
+  display: block;
+  width: 800px;
+  height: 385px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.small-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 384px;
+  min-width: 400px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.small-area-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .gifts {
   display: flex;
   flex-direction: column;
@@ -291,44 +364,18 @@ html {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.small-area-title,
-.few-tourists-title,
-.residence-title,
-.gifts-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.beautiful-road {
+.gifts-container {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 384px;
-  max-width: 400px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  list-style: none;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-  color: #333333;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  min-height: 384px;
+  max-width: 230px;
+  padding-right: 85px;
+  padding-left: 85px;
 }
 
-.beautiful-road-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.food {
+.few-tourists {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -345,6 +392,128 @@ html {
   text-align: center;
   text-decoration: none;
   text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.few-tourists-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.residence {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.residence-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.small-area-title,
+.few-tourists-title,
+.residence-title,
+.gifts-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.beautiful-road {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  justify-content: center;
+}
+
+.beautiful-road-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: transparent;
+}
+
+.beautiful-road-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  color: #333333;
+  justify-content: center;
+}
+
+.food-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 230px;
+  min-height: 384px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background-color: transparent;
 }
 
 .food-title {
@@ -389,6 +558,23 @@ html {
   text-transform: uppercase;
 }
 
+.searching-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #756157;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+  text-transform: uppercase;
+  min-width: 376px;
+  min-height: 52px;
+}
+
 .newsletter-subscribe {
   display: flex;
   flex-direction: column;
@@ -415,6 +601,13 @@ html {
   text-align: left;
   visibility: visible;
   text-transform: uppercase;
+}
+
+.newsletter-subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer {
