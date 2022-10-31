@@ -593,6 +593,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat, no-repeat;
   color: #ffffff;
+  width: 1200px;
+  height: 415px;
 }
 
 .newsletter-subscribe-title {
@@ -609,6 +611,35 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.email-field {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 345px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font: inherit;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+
+.email-field:hover {
+  background-color: #e6e6e6;
+}
+
+.email-field:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.email-field::placeholder {
+  font-family: 'PT-Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 60%;
 }
 
 .page-footer {
@@ -692,6 +723,77 @@ html {
 
 .catalog-filter-list {
   list-style: none;
+}
+
+.range-scale {
+  position: absolute;
+  width: 287px;
+  margin-bottom: 78px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.range-bar {
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: 0%;
+  border-radius: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.toggle-max {
+  right: -8px;
+}
+
+.range-input {
+  width: 143px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px, 20px, 12px, 20px;
+  position: absolute;
+  color: #000000;
+  background-color: #f2f2f2;
+  margin-left: 141px;
+  margin-right: 70px;
+  margin-top: 32px;
+  margin-bottom: 126px;
+}
+
+.range-input:hover {
+  color: #000000;
+  background-color: #e6e6e6;
+}
+
+.range-input:focus {
+  color: #000000;
+  background-color: #e6e6e6;
+}
+
+.catalog-filter-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 17px;
+  height: 24px;
+  opacity: 0.3%;
 }
 
 .sorting-container {
@@ -826,6 +928,11 @@ html {
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
+}
+
+.button-submit {
+  min-width: 232px;
+  min-height: 52px;
 }
 
 .more-information-button {
