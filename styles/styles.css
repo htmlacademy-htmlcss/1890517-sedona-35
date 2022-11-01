@@ -937,8 +937,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   min-width: 191px;
+  min-height: 104px;
 }
 
 .filter-reset-uppercase {
