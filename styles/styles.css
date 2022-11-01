@@ -727,18 +727,26 @@ html {
   position: relative;
 }
 
+.filters-container {
+  background-image: url("../img/breadcrumbs.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .inner-header,
-.catalog-products-container,
-.breadcrumbs-list {
+.catalog-products {
   font-family: "PT-Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  background-image: url("../img/breadcrumbs.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .inner-header-title {
@@ -760,6 +768,18 @@ html {
   color: inherit;
 }
 
+.catalog-filters-form {
+  display: flex;
+  flex-direction: row;
+  max-width: 1060px;
+  height: 160px;
+  margin-bottom: 70px;
+}
+
+.catalog-filter-title {
+  min-width: 119px;
+}
+
 .catalog-filter-list {
   list-style: none;
 }
@@ -767,12 +787,14 @@ html {
 .range-scale {
   position: absolute;
   width: 287px;
-  margin-bottom: 78px;
+  height: 20px;
+  margin-bottom: 70px;
   background-color: #ffffff;
   border-radius: 3px;
 }
 
 .range-bar {
+  width: 287px;
   position: absolute;
   background-color: #ffffff;
 }
@@ -788,13 +810,14 @@ html {
 .toggle-min {
   top: 0%;
   border-radius: 5px;
-  left: 0;
+  left: 0,5px;
   right: 0;
   bottom: 0;
 }
 
 .toggle-max {
   right: -8px;
+  left: 207px;
 }
 
 .range-input {
@@ -857,6 +880,52 @@ html {
   margin-right: 32px;
 }
 
+.catalog-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1060px;
+  height: 160px;
+}
+
+.catalog-filter-title {
+  font-family: "PT SANS", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+.infrastructure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-width: 151px;
+  border: 0;
+}
+
+.living {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-width: 151px;
+  border: 0;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  margin-left: 70px;
+}
+
 .filter-uppercase {
   display: flex;
   flex-direction: column;
@@ -897,6 +966,8 @@ html {
   color: #ffffff;
   background-color: transparent;
   border-radius: 4px;
+  padding-bottom: 70px;
+  padding-top: 32px;
 }
 
 .sorting-container .button {
@@ -985,12 +1056,12 @@ html {
   background-color: #6C9E42;
 }
 
-.button-able:active{
+.button-able:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7DB54F;
 }
 
-.button-able:disabled{
+.button-able:disabled {
   color: #ffffff;
   background-color: #e5e5e5;
 }
