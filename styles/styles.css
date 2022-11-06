@@ -157,6 +157,7 @@ html {
 .navigation-user .navigation-link {
   min-width: 44px;
   min-height: 22px;
+  text-transform: uppercase;
 }
 
 .navigation-link {
@@ -172,6 +173,10 @@ html {
 }
 
 .main-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -182,6 +187,10 @@ html {
 }
 
 .main-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -337,6 +346,17 @@ html {
   line-height: 28px;
   text-transform: uppercase;
   justify-self: center;
+}
+
+.real-town-title::after,
+.diable-bridge-title::after {
+  content: '';
+  height: 2px;
+  width: 60px;
+  color: #ffffff;
+  background: #ffffff;
+  display: flex;
+  margin: 30px auto;
 }
 
 .real-town-image {
@@ -664,6 +684,25 @@ html {
   height: 415px;
 }
 
+.newsletter-subscribe-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "PT-Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 26px;
+  text-align: center;
+  text-transform: none;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1200px;
+  height: 415px;
+}
+
 .newsletter-subscribe-title {
   font-weight: 700;
   font-size: 30px;
@@ -673,6 +712,25 @@ html {
   text-transform: uppercase;
 }
 
+.newsletter-subscribe-catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+  visibility: visible;
+  text-transform: uppercase;
+}
+
+.newsletter-subscribe-catalog-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 362px;
+  margin-right: 362px;
+  margin-bottom: 54px;
+}
+
 .newsletter-subscribe-form {
   display: flex;
   flex-direction: row;
@@ -680,33 +738,58 @@ html {
   align-items: center;
 }
 
-.email-field {
+.newsletter-subscribe-catalog-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-subscribe-catalog-form-email {
   margin: 0;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 20px;
   padding-right: 345px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font: inherit;
-  font-weight: 400;
-  background-color: #f2f2f2;
+  font-family: 'PT-Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.email-field:hover {
+.newsletter-subscribe-form-email {
+  margin: 0;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 345px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: 'PT-Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.newsletter-subscribe-form-email:hover {
   background-color: #e6e6e6;
 }
 
-.email-field:focus {
+.newsletter-subscribe-form-email:focus {
   outline: 3px solid #83b3d3;
 }
 
-.email-field::placeholder {
-  font-family: 'PT-Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+.email-field {
+  background-color: inherit;
   color: #000000;
-  opacity: 60%;
+  border: none;
+  opacity: 0.5;
 }
 
 .page-footer {
@@ -736,13 +819,13 @@ html {
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  visibility: hidden;
   list-style-type: none;
 }
 
 .footer-social-vk {
   width: 24px;
   height: 24px;
+  background-image: url(../img/social-vk.svg);
   background-color: #8383D3;
 }
 
@@ -761,6 +844,7 @@ html {
 .footer-social-telegram {
   width: 24px;
   height: 24px;
+  background-image: url(../img/social-telegram.svg);
   background-color: #8383D3;
 }
 
@@ -779,6 +863,7 @@ html {
 .footer-social-youtube {
   width: 24px;
   height: 24px;
+  background-image: url(../img/social-youtube.svg);
   background-color: #8383D3;
 }
 
@@ -1228,6 +1313,13 @@ html {
   text-align: left;
   color: #000000;
   background-color: #ffffff;
+}
+
+.hotel-cards-section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .hotel-cards-filters-container {
