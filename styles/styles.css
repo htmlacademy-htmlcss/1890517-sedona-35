@@ -230,9 +230,9 @@ html {
 
 .main-logo-container {
   text-align: center;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../img/background.jpg"), url("../img/divider.png");
+  background-size: cover cover;
+  background-repeat: no-repeat no-repeat;
   margin-bottom: 82px;
 }
 
@@ -822,61 +822,37 @@ html {
   list-style-type: none;
 }
 
-.footer-social-vk {
+.footer-social-link {
+  display: block;
   width: 24px;
-  height: 24px;
+  height: 24pz;
+}
+
+.footer-social-vk {
   background-image: url(../img/social-vk.svg);
   background-color: #8383D3;
 }
 
-.footer-social-vk:hover {
+.footer-social-link:hover {
   background-color: #68A2CA;
 }
 
-.footer-social-vk:focus {
+.footer-social-link:focus {
   background-color: #68A2CA;
 }
 
-.footer-social-vk:active {
+.footer-social-link:active {
   background-color: #68a2ca 30%;
 }
 
 .footer-social-telegram {
-  width: 24px;
-  height: 24px;
   background-image: url(../img/social-telegram.svg);
   background-color: #8383D3;
 }
 
-.footer-social-telegram:hover {
-  background-color: #68A2CA;
-}
-
-.footer-social-telegram:focus {
-  background-color: #68A2CA;
-}
-
-.footer-social-telegram:active {
-  background-color: #68a2ca 30%;
-}
-
 .footer-social-youtube {
-  width: 24px;
-  height: 24px;
   background-image: url(../img/social-youtube.svg);
   background-color: #8383D3;
-}
-
-.footer-social-youtube:hover {
-  background-color: #68A2CA;
-}
-
-.footer-social-youtube:focus {
-  background-color: #68A2CA;
-}
-
-.footer-social-youtube:active {
-  background-color: #68a2ca 30%;
 }
 
 .footer-contacts-phone {
