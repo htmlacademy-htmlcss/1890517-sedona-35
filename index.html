@@ -11,14 +11,12 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="navigation">
+          <div class="logo-container">
+            <a class="navigation-logo" href="index.html">
+              <img class="logo-header" src="img/logo.svg" alt="Логотип Седоны" width="138" height="64">
+            </a>
+          </div>
           <ul class="navigation-list">
-            <li class="navigation-list-item logo-item">
-              <div class="logo-container">
-                <a class="navigation-logo" href="index.html">
-                  <img class="logo-header" src="img/logo.svg" alt="Логотип Седоны" width="138" height="64">
-                </a>
-              </div>
-            </li>
             <li class="navigation-list-item">
               <a class="navigation-link navigation-link-current" href="#">Главная</a>
             </li>
@@ -206,6 +204,19 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="coming-date" for="date">Дата заезда</label>
+              <input class="coming-date field" type="date" id="date" name="date" placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group">
+              <label class="outcoming-date field" for="date">Дата выезда</label>
+              <input class="outcoming-date field" type="date" id="date" name="date" placeholder="1 сентября 2023">
+            </p>
+            <p class="field-group">
+              <label for="visiters-field"></label>
+            </p>
+          </form>
         </section>
       </div>
     </div>
