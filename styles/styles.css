@@ -937,7 +937,10 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 717px;
   height: 576px;
   background-color: #ffffff;
@@ -956,28 +959,28 @@ html {
 .modal-visit {
   width: 717px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  height: 576px;
+  border-radius: 30px;
+  align-items: flex-start;
 }
 
 .modal-title-container {
-  display: grid;
-  grid-template-columns: auto 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 70px;
 }
 
 .modal-close-button {
-  position: absolute;
   padding: 0;
-  top: 64px;
-  left: 613px;
-  right: 0;
   width: 52px;
   height: 52px;
   background-color: #f2f2f2;
   border: #f2f2f2;
   border-radius: 30px;
-  margin-top: 64px;
+  margin-right: 52px;
   cursor: pointer;
 }
 
@@ -1010,8 +1013,10 @@ html {
 }
 
 .modal-content {
-  display: grid;
-  grid-template-rows: 577px 320px 577px 371px 577px 577px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .visit-form {
@@ -1027,13 +1032,43 @@ html {
 }
 
 .field-group .visit-options {
-  display: grid;
-  grid-template-columns: 113px 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.visit-options,
+.outcoming-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px;
+  height: 48px;
+  margin-right: 27px;
 }
 
 .field-group .outcoming-options {
-  display: grid;
-  grid-template-columns: 116px 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.field-label {
+  font-size: 20px;
+  font-family: 'PT SANS', SANS-SERIF;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 18px;
 }
 
 .form-error {
@@ -1049,6 +1084,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 120px;
+  margin-left: 157px;
+  margin-bottom: 23px;
+  margin-top: 4px;
 }
 
 .date-description {
@@ -1071,15 +1110,34 @@ html {
   flex-direction: row;
 }
 
-.visit-form .field-group {
-  margin: 0;
-  margin-bottom: 48px;
+.user-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px;
+  width: 577px;
+  margin-right: 70px;
+  left: 0;
 }
 
-.user-options {
-  display: grid;
-  grid-template-columns: 91px 110px 85px 111px;
-  gap: 46px;
+.visiters-numbers {
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  padding-right: 10px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.children-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .find-button {
@@ -1087,7 +1145,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   min-width: 577px;
   min-height: 60px;
   color: #ffffff;
@@ -1104,8 +1161,6 @@ html {
   padding-right: 257px;
   padding-top: 18px;
   padding-bottom: 18px;
-  margin-top: 60px;
-  margin-bottom: 64px;
   margin-left: 70px;
   margin-right: 70px;
 }
@@ -1136,19 +1191,17 @@ html {
   line-height: 24px;
   color: #000000;
   background-color: #f2f2f2;
-  width: 440px;
   margin-left: 20px;
-  margin-right: 255px;
   margin-top: 12px;
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  width: 440px;
 }
 
 .tooltip-container {
-  position: absolute;
   min-width: 256px;
   min-height: 152px;
   z-index: 2;
@@ -1198,6 +1251,16 @@ html {
 
 .adults {
   min-width: 91px;
+}
+
+.adults-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 247px;
+  margin-left: 70px;
+  margin-right: 27px;
 }
 
 .button-less:focus,

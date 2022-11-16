@@ -239,43 +239,43 @@
         </div>
         <section class="modal-content">
           <form class="visit-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group visit-options">
-              <label class="coming-date-label" for="date">Дата заезда</label>
+            <div class="field-group visit-options">
+              <label class="coming-date field-label" for="date">Дата заезда</label>
               <input class="coming-date field-input" type="date" id="date" name="date" placeholder="27 апреля 2020">
-            </p>
-            <span class="form-error">Мы не можем отправить вас в прошлое</span>
-            <p class="field-group outcoming-options">
-              <label class="outcoming-date field" for="date">Дата выезда</label>
-              <input class="outcoming-date field-input" type="date" id="date" name="date" placeholder="1 сентября 2023">
-            </p>
-            <span class="date-description">На эти даты есть свободные номера. Пока есть</span>
-            <p class="field-group user-options adults-options">
-              <label for="visiters-field-label adults">Взрослые</label>
-              <button class="button-more" type="button">+</button>
-              <input class="visiters-number field-input" type="number" id="number" name="number" placeholder="2">
-              <button class="button-less">-</button>
-            </p>
-            <p class="field-group user-options children-options">
-            <div class="label-children">
-              <label for="visiters-field-label children">Дети</label>
-              <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
-              </svg>
-              <span class="visually-hidden">Внимание</span>
             </div>
-            <button class="button-less" type="button">
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3" />
-              </svg>
-            </button>
-            <input class="visiters-number field-input" type="number" id="number" name="number" placeholder="2">
-            <button class="button-more" type="button">
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3" />
-              </svg>
-            </button>
-            </p>
+            <span class="form-error">Мы не можем отправить вас в прошлое</span>
+            <div class="field-group outcoming-options">
+              <label class="outcoming-date field-label" for="date">Дата выезда</label>
+              <input class="outcoming-date field-input" type="date" id="date" name="date" placeholder="1 сентября 2023">
+            </div>
+            <span class="date-description">На эти даты есть свободные номера. Пока есть</span>
+            <div class="user-options">
+              <div class="field-group user-options adults-options">
+                <label for="visiters-field-label adults">Взрослые</label>
+                <span class="button-less">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
+                </span>
+                <input class="visiters-number-input" type="number" id="number" name="number" value="2">
+                <span class="button-more">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
+                </span>
+              </div>
+              <div class="field-group user-options children-options">
+                <label for="visiters-field-label children">Дети</label>
+                <span class="button-less">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
+                </span>
+                <input class="visiters-number-input" type="number" id="number" name="number" value="2">
+                <span class="button-more">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
+                </span>
+                <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                </svg>
+                <span class="visually-hidden">Внимание</span>
+              </div>
+            </div>
             <div class="tooltip-container">
               <p class="tooltip-paragraph">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 16 размещаются бесплатно</p>
             </div>
