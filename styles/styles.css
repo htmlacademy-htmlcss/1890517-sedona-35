@@ -943,7 +943,7 @@ html {
   flex-direction: column;
   width: 100px;
   height: 100px;
-  background-color: #ffffff;
+  background-color: rgba(242, 242, 242, 0.5);
 }
 
 .modal {
@@ -957,27 +957,27 @@ html {
   height: 576px;
   width: 717px;
   border-radius: 30px;
-  padding: 0;
+  padding: 64px 70px 64px 70px;
+  box-sizing: border-box;
 }
 
 .modal-title-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-left: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-close-button {
   padding: 26px;
-  margin-top: 64px;
   width: 52px;
   height: 52px;
   background: url(../img/modal-close.svg) no-repeat center #f2f2f2;
   background-color: #f2f2f2;
   border: #f2f2f2;
   border-radius: 30px;
-  margin-right: 52px;
   cursor: pointer;
+  margin-left: 50px;
 }
 
 .modal-close-button:hover {
@@ -997,9 +997,6 @@ html {
 
 .modal-title {
   margin: 0;
-  margin-top: 64px;
-  margin-bottom: 64px;
-  margin-right: 64px;
   font-family: 'PT-Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -1009,23 +1006,23 @@ html {
   text-transform: uppercase;
 }
 
+.modal-title-container {
+  margin-bottom: 64px;
+}
+
 .modal-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .visit-form {
-  margin-right: 70px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 577px;
-  height: 448px;
-  box-shadow: rgba(0, 0, 0, 0.15);
-  border-radius: 30px;
+  justify-content: flex-start;
 }
 
 .field-group .visit-options {
@@ -1039,11 +1036,9 @@ html {
 .outcoming-options {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 70px;
-  height: 48px;
-  margin-right: 27px;
+  width: 100%;
 }
 
 .field-group .outcoming-options {
@@ -1063,7 +1058,6 @@ html {
   text-align: left;
   text-decoration: none;
   text-transform: capitalize;
-  margin-right: 18px;
 }
 
 .form-error {
@@ -1162,11 +1156,9 @@ html {
 
 .find-button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 577px;
-  min-height: 60px;
   color: #ffffff;
   background-color: #83B3D3;
   border-radius: 10px;
@@ -1177,12 +1169,8 @@ html {
   line-height: 24px;
   text-decoration: none;
   text-align: center;
-  padding-left: 257px;
-  padding-right: 257px;
-  padding-top: 18px;
   padding-bottom: 18px;
-  margin-left: 70px;
-  margin-right: 70px;
+  border: none;
   margin-top: 49px;
 }
 
@@ -1213,13 +1201,14 @@ html {
   color: #000000;
   background-color: #f2f2f2;
   margin-left: 20px;
-  margin-top: 12px;
-  margin-bottom: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
   width: 440px;
+  height: 48px;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .tooltip-container {
@@ -1253,17 +1242,6 @@ html {
   min-width: 216px;
 }
 
-.tooltip-paragraph::before {
-  position: absolute;
-  background-image: url(../img/triangle.svg);
-  background-repeat: no-repeat;
-  width: 19px;
-  height: 9px;
-  content: "";
-  bottom: 133px;
-  right: 118px;
-}
-
 .tooltip-toggle:hover + .tooltip-paragraph,
 .tooltip-toggle:focus + .tooltip-paragraph {
   display: block;
@@ -1293,17 +1271,25 @@ html {
 .adults-options {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 247px;
-  margin-left: 70px;
-  margin-right: 27px;
+  width: fit-content;
+}
+
+.warning-image {
+  margin-left: 10px;
+}
+
+.adults-options-container,
+.children-options-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 46px;
 }
 
 .button-less {
   position: relative;
   display: flex;
-  background: url(../img/button-minus.svg) no-repeat #f2f2f2;
   padding: 0;
   border: none;
   width: 40px;
@@ -1313,7 +1299,6 @@ html {
 .button-more {
   position: relative;
   display: flex;
-  background: url(../img/button-plus.svg) no-repeat #f2f2f2;
   padding: 0;
   border: none;
   width: 40px;

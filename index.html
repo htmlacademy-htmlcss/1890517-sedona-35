@@ -251,21 +251,34 @@
             <div class="user-options">
               <div class="field-group user-options adults-options">
                 <label for="visiters-field-label adults-label">Взрослые</label>
-                <button class="button-less"></button>
-                <input class="adults-number" type="number" id="number" name="number" placeholder="2">
-                <button class="button-more"></button>
+                <div class="adults-options-container">
+                  <button class="button-less">
+                    <img class="button-less-image" src="img/button-minus.svg" alt="Минус" width="40" height="48">
+                  </button>
+                  <input class="adults-number" type="number" id="number" name="number" placeholder="2">
+                  <button class="button-more">
+                    <img class="button-more-image" src="img/button-plus.svg" alt="Плюс" width="40" height="48">
+                  </button>
+                </div>
               </div>
               <div class="field-group user-options children-options">
                 <label for="visiters-field-label children-label">Дети</label>
-                <button class="button-less"></button>
-                <input class="children-number" type="number" id="number" name="number" placeholder="2">
-                <button class="button-more"></button>
-                <button class="tooltip-toggle" type="button"></button>
+                <img class="warning-image" src="img/warning.svg" alt="Внимание" width="26" height="26">
+                <div class="children-options-container">
+                  <button class="button-less">
+                    <img class="button-less-image" src="img/button-minus.svg" alt="Минус" width="40" height="48">
+                  </button>
+                  <input class="adults-number" type="number" id="number" name="number" placeholder="2">
+                  <button class="button-more">
+                    <img class="button-more-image" src="img/button-plus.svg" alt="Плюс" width="40" height="48">
+                  </button>
+                </div>
                 <span class="visually-hidden">Внимание</span>
               </div>
             </div>
             <button class="button find-button" type="button">Найти</button>
             <div class="tooltip-container">
+              <img class="tooltip-triangle" src="img/triangle.svg" alt="Тултип" width="19" height="9">
               <p class="tooltip-paragraph">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 16 размещаются бесплатно</p>
             </div>
           </form>
