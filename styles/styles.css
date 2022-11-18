@@ -941,29 +941,23 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 717px;
-  height: 576px;
+  width: 100px;
+  height: 100px;
   background-color: #ffffff;
 }
 
 .modal {
   position: relative;
   margin: auto;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 40px;
   background-color: #ffffff;
 }
 
 .modal-visit {
-  width: 717px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 576px;
+  width: 717px;
   border-radius: 30px;
-  align-items: flex-start;
+  padding: 0;
 }
 
 .modal-title-container {
@@ -974,9 +968,11 @@ html {
 }
 
 .modal-close-button {
-  padding: 0;
+  padding: 26px;
+  margin-top: 64px;
   width: 52px;
   height: 52px;
+  background: url(../img/modal-close.svg) no-repeat center #f2f2f2;
   background-color: #f2f2f2;
   border: #f2f2f2;
   border-radius: 30px;
@@ -1001,6 +997,7 @@ html {
 
 .modal-title {
   margin: 0;
+  margin-top: 64px;
   margin-bottom: 64px;
   margin-right: 64px;
   font-family: 'PT-Sans', sans-serif;
@@ -1020,7 +1017,7 @@ html {
 }
 
 .visit-form {
-  margin: 0;
+  margin-right: 70px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
@@ -1036,8 +1033,6 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 .visit-options,
@@ -1112,13 +1107,9 @@ html {
 
 .user-options {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 70px;
-  width: 577px;
-  margin-right: 70px;
-  left: 0;
+  width: 247px;
 }
 
 .visiters-numbers {
@@ -1133,11 +1124,40 @@ html {
   padding-left: 10px;
 }
 
+.adults-number,
+.children-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  width: 31px;
+  height: 48px;
+  border: none;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.visiters-field-label {
+  margin-right: 46px;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+
 .children-options {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-left: 85px;
 }
 
 .find-button {
@@ -1163,6 +1183,7 @@ html {
   padding-bottom: 18px;
   margin-left: 70px;
   margin-right: 70px;
+  margin-top: 49px;
 }
 
 .coming-date-label,
@@ -1232,6 +1253,22 @@ html {
   min-width: 216px;
 }
 
+.tooltip-paragraph::before {
+  position: absolute;
+  background-image: url(../img/triangle.svg);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+  content: "";
+  bottom: 133px;
+  right: 118px;
+}
+
+.tooltip-toggle:hover + .tooltip-paragraph,
+.tooltip-toggle:focus + .tooltip-paragraph {
+  display: block;
+}
+
 .label-children,
 .adults {
   display: flex;
@@ -1261,6 +1298,26 @@ html {
   width: 247px;
   margin-left: 70px;
   margin-right: 27px;
+}
+
+.button-less {
+  position: relative;
+  display: flex;
+  background: url(../img/button-minus.svg) no-repeat #f2f2f2;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
+}
+
+.button-more {
+  position: relative;
+  display: flex;
+  background: url(../img/button-plus.svg) no-repeat #f2f2f2;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 48px;
 }
 
 .button-less:focus,
@@ -1593,6 +1650,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 104px;
+  margin-top: 56px;
   align-items: center;
   margin-left: 70px;
   margin-right: 70px;

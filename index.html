@@ -234,7 +234,6 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
-            <svg width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="26" cy="26" r="26" fill="#F2F2F2"/><path d="m33.49 20.78-1.3-1.29-5.7 5.7-5.7-5.7-1.3 1.3 5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" fill="#000"/></svg>
           </button>
         </div>
         <section class="modal-content">
@@ -251,35 +250,24 @@
             <span class="date-description">На эти даты есть свободные номера. Пока есть</span>
             <div class="user-options">
               <div class="field-group user-options adults-options">
-                <label for="visiters-field-label adults">Взрослые</label>
-                <span class="button-less">
-                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
-                </span>
-                <input class="visiters-number-input" type="number" id="number" name="number" value="2">
-                <span class="button-more">
-                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
-                </span>
+                <label for="visiters-field-label adults-label">Взрослые</label>
+                <button class="button-less"></button>
+                <input class="adults-number" type="number" id="number" name="number" placeholder="2">
+                <button class="button-more"></button>
               </div>
               <div class="field-group user-options children-options">
-                <label for="visiters-field-label children">Дети</label>
-                <span class="button-less">
-                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="#756157" fill-opacity=".3"/></svg>
-                </span>
-                <input class="visiters-number-input" type="number" id="number" name="number" value="2">
-                <span class="button-more">
-                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" fill-opacity=".3"/></svg>
-                </span>
-                <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
-                </svg>
+                <label for="visiters-field-label children-label">Дети</label>
+                <button class="button-less"></button>
+                <input class="children-number" type="number" id="number" name="number" placeholder="2">
+                <button class="button-more"></button>
+                <button class="tooltip-toggle" type="button"></button>
                 <span class="visually-hidden">Внимание</span>
               </div>
             </div>
+            <button class="button find-button" type="button">Найти</button>
             <div class="tooltip-container">
               <p class="tooltip-paragraph">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 16 размещаются бесплатно</p>
             </div>
-            <button class="button find-button" type="button">Найти</button>
           </form>
         </section>
       </div>
