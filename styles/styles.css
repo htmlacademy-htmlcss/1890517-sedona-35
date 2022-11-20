@@ -977,7 +977,7 @@ html {
   border: #f2f2f2;
   border-radius: 30px;
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 48px;
 }
 
 .modal-close-button:hover {
@@ -988,6 +988,7 @@ html {
 .modal-close-button:focus {
   color: #000000;
   background-color: #e6e6e6;
+  border: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -1171,7 +1172,9 @@ html {
   text-align: center;
   padding-bottom: 18px;
   border: none;
-  margin-top: 49px;
+  height: 60px;
+  margin-top: 50px;
+  padding-top: 18px;
 }
 
 .coming-date-label,
@@ -1212,15 +1215,15 @@ html {
 }
 
 .tooltip-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 47px;
   min-width: 256px;
-  min-height: 152px;
   z-index: 2;
-  left: -61px;
-  top: 32px;
-  margin-top: 2px;
-  margin-bottom: 25px;
-  margin-left: 344px;
-  margin-right: 117px;
+  border-radius: 30px;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 280px;
   font-family: 'PT-Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1234,12 +1237,21 @@ html {
   align-items: center;
 }
 
+.tooltip-triangle {
+  position: relative;
+  bottom: 8px;
+}
+
 .tooltip-paragraph {
   padding-left: 22px;
   padding-right: 18px;
-  padding-top: 15px;
-  padding-bottom: 18px;
   min-width: 216px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 216px;
+  text-align: left;
 }
 
 .tooltip-toggle:hover + .tooltip-paragraph,
@@ -1294,6 +1306,7 @@ html {
   border: none;
   width: 40px;
   height: 48px;
+  color: #FFFFFF;
 }
 
 .button-more {
@@ -1303,11 +1316,18 @@ html {
   border: none;
   width: 40px;
   height: 48px;
+  color: #ffffff;
 }
 
 .button-less:focus,
 .button-more:focus {
   border: 3px solid #82b3d3;
+}
+
+.button-less:active,
+.button-more:active {
+  color: #FFFFFF;
+  opacity: 20%;
 }
 
 .catalog-products-container {
@@ -1440,6 +1460,7 @@ html {
   display: block;
   width: 20px;
   height: 20px;
+  background: url(../img/checkbox.svg) no-repeat center;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -1465,6 +1486,7 @@ html {
   height: 20px;
   background-color: #ffffff;
   border-radius: 50%;
+  background: url(../img/radio.svg) no-repeat center;
 }
 
 .control-description-housing:hover::before,

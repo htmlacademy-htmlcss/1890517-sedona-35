@@ -94,6 +94,7 @@
             <section class="catalog-products">
               <div class="catalog-products-container">
                 <h2 class="visually-hidden">Список услуг с фильтрами</h2>
+
                 <form action="https://echo.htmlacademy.ru/" class="catalog-form" method="get">
                   <section class="catalog-filter-block">
                     <h3 class="visually-hidden">Подбор гостиницы по инфраструктуре и типу жилья.</h3>
@@ -103,25 +104,19 @@
                         <li class="catalog-filter-item">
                           <label for="pool" class="control">
                             <input class="control-input visually-hidden" type="checkbox" id="pool" name="pool" checked>
-                            <span class="control-mark"></span>
                             <span class="control-description">Бассейн</span>
-                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M11 .5 4.5 7.9 1.1 4 0 5.2l4.5 5.2 7.7-8.6L11 .5Z" fill="#3F5E72" />
-                            </svg>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label for="parking" class="control">
                             <input class="control-input visually-hidden" type="checkbox" id="parking" name="parking"
                               checked>
-                            <span class="control-mark"></span>
                             <span class="control-description">Парковка</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label for="wifi" class="control">
                             <input class="control-input visually-hidden" type="checkbox" id="wifi" name="wifi">
-                            <span class="control-mark"></span>
                             <span class="control-description">Wi-Fi</span>
                           </label>
                         </li>
@@ -134,7 +129,6 @@
                           <label for="hotel" class="control">
                             <input class="control-input visually-hidden" type="radio" id="hotel" name="product-group"
                               value="hotel" checked>
-                            <span class="control-mark"></span>
                             <span class="control-description control-description-housing">Гостиница</span>
                           </label>
                         </li>
@@ -142,7 +136,6 @@
                           <label for="motel" class="control">
                             <input class="control-input visually-hidden" type="radio" id="motel" name="product-group"
                               value="motel">
-                            <span class="control-mark"></span>
                             <span class="control-description control-description-housing">Мотель</span>
                           </label>
                         </li>
@@ -150,7 +143,6 @@
                           <label for="apartments" class="control">
                             <input class="control-input visually-hidden" type="radio" id="apartments"
                               name="product-group" value="apartments">
-                            <span class="control-mark"></span>
                             <span class="control-description control-description-housing">Апартаменты</span>
                           </label>
                         </li>
@@ -182,12 +174,14 @@
                         </div>
                       </div>
                     </fieldset>
+
                     <div class="catalog-filter-buttons">
                       <button class="button button-catalog-filter-group-submit" type="submit">Применить</button>
                       <button class="button-catalog-filter-group-reset" type="reset">Сбросить</button>
                     </div>
                   </section>
                 </form>
+
               </div>
             </section>
             <section class="hotel-cards">
