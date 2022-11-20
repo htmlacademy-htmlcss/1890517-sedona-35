@@ -781,7 +781,7 @@ html {
   padding-right: 345px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-size: 18px;
   line-height: 24px;
 }
@@ -797,7 +797,7 @@ html {
   padding-right: 345px;
   padding-top: 14px;
   padding-bottom: 14px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1064,7 +1064,7 @@ html {
 .form-error {
   color: #FF5757;
   min-width: 280px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1087,7 +1087,7 @@ html {
   margin-left: 157px;
   margin-bottom: 23px;
   min-width: 371px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1126,7 +1126,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
@@ -1138,7 +1138,7 @@ html {
 }
 
 .visiters-field-label {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT SANS', SANS-SERIF;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
