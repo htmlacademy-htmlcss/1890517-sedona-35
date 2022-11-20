@@ -1100,6 +1100,12 @@ html {
   flex-direction: row;
 }
 
+.calendar {
+  position: absolute;
+  margin: 520px;
+  border: none;
+}
+
 .user-options {
   display: flex;
   justify-content: space-between;
@@ -1249,7 +1255,7 @@ html {
   border-radius: 30px;
   position: absolute;
   margin-top: 240px;
-  margin-left: 280px;
+  margin-left: 270px;
   font-family: 'PT-Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
